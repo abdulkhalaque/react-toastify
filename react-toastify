@@ -1,0 +1,18 @@
+import React from 'react'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const Toastify = () => {
+  return (
+      <div>
+          <h1>React Toastify</h1>
+          <button className='btn' onClick={() =>
+          { toast.success("Congratulation, Log in Success") }}>Success</button>
+          <button className='btn' onClick={() =>
+          { toast.error("Please, Try again") }}>Error</button>
+          <button className='btn' onClick={() => { toast.warn("Promise is pending") }}>Promise</button>
+          <ToastContainer />
+    </div>
+  )
+}
+
+export default Toastify
